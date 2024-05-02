@@ -1,0 +1,59 @@
+5/2:
+Finally got the manual to the scanner we're using. Will try to make some changes here as well as to the mindbody site.
+https://www.symcode.cn/public/upload/MJ-340%20USER%20MANUAL%2088x140mm.pdf
+barcode scanner changes:
+
+add delay on scanning same barcode (5sec) x
+remove delay for scanning new barcodes (min 0.5sec) x
+always light on? x
+mute buzzer 
+boot prompt?
+setup code prompt?
+invoice function?
+
+it was the wrong manual lol.
+OK 
+
+Finding the manual for this thing might actually be impossible.
+
+Managed to get the usb data for the thing with ioreg.
+
+7200@14400000  <class AppleUSBDevice, id 0x1000d8019, registered, matched, active, busy 0 (711 ms), retain 16>
+        {
+          "sessionID" = 5009460323297167
+          "iManufacturer" = 1
+          "bNumConfigurations" = 1
+          "idProduct" = 417
+          "bcdDevice" = 64656
+          "Bus Power Available" = 250
+          "USB Address" = 5
+          "bMaxPacketSize0" = 64
+          "iProduct" = 2
+          "iSerialNumber" = 8
+          "bDeviceClass" = 0
+          "Built-In" = No
+          "locationID" = 339738624
+          "bDeviceSubClass" = 0
+          "bcdUSB" = 272
+          "USB Product Name" = "7200"
+          "PortNum" = 4
+          "non-removable" = "no"
+          "IOCFPlugInTypes" = {"9dc7b780-9ec0-11d4-a54f-000a27052861"="IOUSBFamily.kext/Contents/PlugIns/IOUSBLib.bundle"}
+          "bDeviceProtocol" = 0
+          "IOUserClientClass" = "IOUSBDeviceUserClientV2"
+          "IOPowerManagement" = {"DevicePowerState"=0,"CurrentPowerState"=3,"CapabilityFlags"=65536,"MaxPowerState"=4,"DriverPowerState"=3}
+          "kUSBCurrentConfiguration" = 1
+          "Device Speed" = 1
+          "USB Vendor Name" = "SuperMax  Imaging               "
+          "idVendor" = 11734
+          "IOGeneralInterest" = "IOCommand is not serializable"
+          "USB Serial Number" = "C71172N0004"
+          "IOClassNameOverride" = "IOUSBDevice"
+        }
+
+on the manual front, I found a guy on facebook who might be affiliated with the company that makes these, so I've just sent him a DM on whatsapp.
+This is a bit ridiculous but if I get the manual I won't complain.
+
+I'm going to conclude my work for today, but I'm a bit frustrated that nothing really panned out.
+Next time I will probably just try to capture the HID device.
+
